@@ -1,0 +1,38 @@
+/* Animation to slide an element up */
+@keyframes slideUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100vh);
+    }
+  }
+  
+  .slide-up {
+    animation: slideUp 1s forwards; /* Adjust duration as needed */
+  }
+  
+  /* Animation to slide an element in from the left */
+  /* Animation to slide an element in from the left */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100vw); /* Start off-screen to the left */
+      opacity: 0; /* Start hidden */
+    }
+    100% {
+      transform: translateX(0); /* End at original position */
+      opacity: 1; /* End visible */
+    }
+  }
+  
+  .slide-in {
+    animation: slideInFromLeft 1.5s cubic-bezier(0.6, -0.55, 0.27, 1.55) forwards; /* Adjust timing and easing */
+    position: absolute; /* Ensure absolute positioning */
+    top: 8%; /* Center vertically */
+    left: 15%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centering adjustment */
+    width: 1000px; /* Adjust width for the image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure it's above the Spline background */
+    opacity: 1; /* Ensure the image is visible */
+  }  
