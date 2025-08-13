@@ -34,7 +34,7 @@ const AddImageBox = ({ images, setImages }) => {
 
   const generateImg = async (idx) => {
     setLoading(true);
-    const apiKey = 'VDuzvJ5vyuXWP3mBIR_HznhxpdQPESpdwZjuAJHtf4I'; // Replace with your Unsplash API key
+    const apiKey = '-'; // Replace with your Unsplash API key
     const numImages = 5; // Number of images to fetch
 
     let list = [];
@@ -53,7 +53,7 @@ const AddImageBox = ({ images, setImages }) => {
     }
     // Generate images
     const openai = new OpenAI({
-      apiKey: 'sk-proj-PmRZheqLQuB191updPkNT3BlbkFJumzmIZDUSwa3pCanUONv',
+      apiKey: '-',
       dangerouslyAllowBrowser: true,
     });
     async function generateImage(prompt) {
